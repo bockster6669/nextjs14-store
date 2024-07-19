@@ -3,6 +3,7 @@ import './globals.css';
 import StoreProvider from '@/store/StoreProvider';
 import { Inter as FontSans } from 'next/font/google';
 import { cn } from '@/lib/utils';
+import NavSideBar from '@/components/shared/NavSideBar';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -24,10 +25,11 @@ export default function RootLayout({
       <html lang="en">
         <body
           className={cn(
-            'min-h-screen bg-background font-sans antialiased flex min-h-screen flex-col items-center justify-center p-24',
+            'min-h-screen bg-background font-sans antialiased flex',
             fontSans.variable
           )}
         >
+          <NavSideBar/>
           {children}
         </body>
       </html>

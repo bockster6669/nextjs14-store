@@ -20,7 +20,7 @@ import { Input } from '../ui/input';
 import { useAppDispatch } from '@/hooks/redux-store';
 import { addNewPost, Post } from '@/store/posts/posts.slice';
 
-const AddPostForm = () => {
+const CreatePostForm = () => {
   const dispatch = useAppDispatch();
   const form = useForm<createTodoForm>({
     defaultValues: {
@@ -34,7 +34,7 @@ const AddPostForm = () => {
   const onSubmit = (formData: createTodoForm) => {
     console.log(formData);
     const { title, description } = formData;
-    
+
     dispatch(addNewPost(title, description));
   };
 
@@ -42,7 +42,7 @@ const AddPostForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-8 w-[400px]"
+        className="space-y-8 w-[400px] bg-slate-200 shadow-lg p-5"
       >
         <FormField
           control={form.control}
@@ -82,4 +82,4 @@ const AddPostForm = () => {
   );
 };
 
-export default AddPostForm;
+export default CreatePostForm;

@@ -17,7 +17,7 @@ const NavSideBar = () => {
     },
     {
       imgURL: '/assets/icons/home.svg',
-      route: 'posts',
+      route: '/posts',
       current: `/${segment}` === '/posts',
       label: 'Posts',
     },

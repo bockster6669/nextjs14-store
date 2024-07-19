@@ -4,11 +4,13 @@ export const sidebarLinks: SidebarLink[] = [
   {
     imgURL: '/assets/icons/home.svg',
     route: '/',
+    check: '(root)',
     label: 'Home',
   },
   {
     imgURL: '/assets/icons/home.svg',
-    route: '/posts',
+    route: 'posts',
+    check: 'posts',
     label: 'Posts',
   },
 ];

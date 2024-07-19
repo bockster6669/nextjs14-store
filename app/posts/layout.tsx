@@ -7,6 +7,7 @@ type PostsLayoutProps = {
 };
 
 const layout = ({ children }: PostsLayoutProps) => {
+  
   return (
     <div className='w-full'>
       <PostsNavigation />

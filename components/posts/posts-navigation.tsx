@@ -3,11 +3,12 @@
 import { postsLinks } from '@/constants';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useSelectedLayoutSegment } from 'next/navigation';
 import React from 'react';
 
 const PostsNavigation = () => {
   const pathname = usePathname();
+ 
   return (
     <nav className=" w-full flex gap-2 items-start box-border p-2 bg-red-300">
       {postsLinks.map((link) => (

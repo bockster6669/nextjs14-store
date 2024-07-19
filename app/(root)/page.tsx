@@ -5,5 +5,5 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
-  return <main className=" bg-blue-300 w-[700px]"></main>;
+  return <main className=" bg-blue-500 w-[700px]"></main>;
 }

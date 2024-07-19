@@ -1,6 +1,7 @@
 export type SidebarLink = {
   imgURL: string;
   route: string;
+  check: string;
   label: string;
 }
 

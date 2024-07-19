@@ -7,7 +7,6 @@ import Post from './post';
 
 const PostsList = () => {
   const postsIds = useAppSelector(selectPostIds);
-  console.log(postsIds)
   return (
     <div className='flex flex-col gap-3 mt-5'>
       {postsIds.length > 0 ? (
